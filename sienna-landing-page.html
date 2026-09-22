@@ -51,9 +51,12 @@
 	.hero .button{min-width:230px;font-size:13px;}
 	.hero .button::before{content:"✦";margin-right:8px;font-size:14px;}
 	.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin:0 0 42px;background:var(--pink);border:1px solid var(--pink);border-radius:18px;overflow:hidden;box-shadow:0 10px 24px #ff2e7e1c;}
-	.benefit{padding:18px 12px;text-align:center;background:#fff7fa;}
-	.benefit strong{display:block;color:var(--pink);font:500 17px Fraunces,serif;}
-	.benefit span{display:block;margin-top:5px;color:var(--muted);font-size:10px;line-height:1.35;}
+	.benefit{min-height:112px;padding:18px 12px;display:flex;flex-direction:column;justify-content:center;text-align:center;color:#fff;background-position:center;background-size:cover;}
+	.benefit:nth-child(1){background-image:linear-gradient(#8f164f9c,#8f164fba),url("assets/blonde-white-dress-optimized.jpg");}
+	.benefit:nth-child(2){background-image:linear-gradient(#8f164f9c,#8f164fba),url("assets/blue-fuzzy-set-optimized.jpg");}
+	.benefit:nth-child(3){background-image:linear-gradient(#8f164f9c,#8f164fba),url("assets/pink-dress-closet-optimized.jpg");}
+	.benefit strong{display:block;color:#fff;font:500 17px Fraunces,serif;text-shadow:0 1px 4px #3d1025;}
+	.benefit span{display:block;margin-top:5px;color:#fff;font-size:10px;line-height:1.35;text-shadow:0 1px 4px #3d1025;}
 	.vip{border-radius:24px;padding:34px 24px 38px;background:linear-gradient(135deg,#fff0f5 0%,#fff 64%);border:1px solid #ffd1e1;}
 	.vip h2{color:#c51f61;}
 	.vip>p{max-width:500px;}
